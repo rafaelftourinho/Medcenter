@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=0">
+    <link rel="stylesheet" href="assets/css/template.css">
+    <script type="text/javascript">
+        window.onload = function() {
+            document.querySelector(".menuMobile").addEventListener("click", function() {
+                if (document.querySelector(".menu nav ul").style.display == 'flex') {
+                    document.querySelector(".menu nav ul").style.display = 'none';
+                } else {
+                    document.querySelector(".menu nav ul").style.display = 'flex';
+                }
+                window.addEventListener('resize', function () {
+                    var largura = window.innerWidth;
+
+                if (largura > 600)
+                    document.querySelector(".menu nav ul").removeAttribute('style');
+        });
+            });
+        };
+    </script>
+    <title>MediCenter</title>
+</head>
+<body>
+
+    <!-- CABEÇALHO DO SITE-->
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href=""><img src="assets/images/logo.png" alt=""></a>
+            </div>
+            <div class="menu">
+                <nav>
+                    <div class="menuMobile">
+                        <div class="mm_line"></div>
+                        <div class="mm_line"></div>
+                        <div class="mm_line"></div>
+                    </div>
+                    <ul>
+                        <li class="active"> <a href="">HOME</a></li>
+                        <li> <a href="">ESPECIALIDADES</a></li>
+                        <li> <a href="">MÉDICOS</a></li>
+                        <li> <a href="">MARCAÇÃO</a></li>
+                        <li> <a href="">INFORMAÇÕES</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!--BANNER DO SITE-->
+
+    <section id="banner">
+        <div class="container column">
+            <div class="banner_headline">
+                <h1>Top notch Experience</h1>
+                <h2>MediCenter is a responsive template for all screen sizes</h2>
+            </div>
+            <div class="banner_options">
+                <div class="banner1">
+                    <div class="banner_title">Emergência</div>
+                    <div class="banner_desc">Em caso de emergências, temos médicos especializados para 
+                        o seu tratamento ágil e eficiente ou do seu ente querido.
+                    </div>
+                    <a href="">Read more</a>
+                </div>
+                <div class="banner2">
+                    <div class="banner_title">Informações sobre Médicos</div>
+                    <div class="banner_desc">
+                        Todos os nossos médicos possuem vasta experiência em atendimentos de diversos 
+                        espectros. Marque sua consulta e garanta já condições imperdíveis.
+                    </div>  
+                    <a href="">Read more</a>
+                </div>
+                <div class="banner3">
+                    <div class="banner_title">Horários</div> 
+                    <div class="horarios">
+                        <p> 
+                            <span><strong> Segunda-Sexta</span>
+                            08:00h às 17:00h</strong>
+                        </p>
+                        <p> 
+                            <span><strong> Sábado</span>
+                            08:00h às 17:00h</strong>
+                        </p>
+                        <p> 
+                            <span><strong> Domingo</span>
+                            08:00h às 17:00h</strong>
+                        </p>
+                    </div>    
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+<!--CORPO DO SITE (ÁREA DE NOTÍCIAS)-->
+
+    <section id="geral">
+        <div class="container">
+            <section>
+                <div class="widget">
+                    <div class="widget_title">
+                        <div class="widget_title_test"><strong> Últimas notícias </strong></div>
+                        <div class="widget_title_bar"></div>
+                    </div>
+                    <div class="widget_body_flex" >
+                        <article>
+                            <a href="">
+                            <div class="news_data">
+                                <div class="news_posted_at">31 MAR 21</div>
+                                <div class="news_comments">13</div>
+                            </div>
+                            <div class="news_thumbnail">
+                                <img src="assets/images/setembro-amarelo.jpg" style="height: 188.483px;" alt="">
+                            </div>
+                            <div class="news_title">
+                                Vamos falar sobre o Setembro Amarelo
+                            </div>
+                            <div class="news_resume">Lorem Ipsum is simply dummy text of the printing and 
+                                typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever 
+                                since the 1500s, when an unknown printer took a galley of type and scrambled it to make a 
+                                ype specimen book. It has survived not only five centuries, but also the leap into electronic 
+                                typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of 
+                                Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software 
+                                like Aldus PageMaker including versions of Lorem Ipsum.
+                            </div>
+                            </a>
+                        </article>
+                        <article>
+                            <a href="">
+                            <div class="news_data">
+                                <div class="news_posted_at">05 ABR 21</div>
+                                <div class="news_comments">58</div>
+                            </div>
+                            <div class="news_thumbnail">
+                                <img src="assets/images/psicologia-terceira-idade-tratamento-psicologico-porto-alegre.jpg" style="height: 188.483px;"alt="">
+                            </div>
+                            <div class="news_title">
+                                As diferenças entre tratamentos entre as idades
+                            </div>
+                            <div class="news_resume">Lorem Ipsum is simply dummy text of the printing and 
+                                typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever 
+                                since the 1500s, when an unknown printer took a galley of type and scrambled it to make a 
+                                ype specimen book. It has survived not only five centuries, but also the leap into electronic 
+                                typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of 
+                                Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software 
+                                like Aldus PageMaker including versions of Lorem Ipsum.
+                            </div>
+                            </a>
+                        </article>
+                        <article>
+                            <a href="">
+                            <div class="news_data">
+                                <div class="news_posted_at">11 DEC 21</div>
+                                <div class="news_comments">45</div>
+                            </div>
+                            <div class="news_thumbnail">
+                                <img src="assets/images/índice.jpeg" style="height: 188.483px;"alt="">
+                            </div>
+                            <div class="news_title">
+                                Manutenção da saúde mental na Pandemia
+                            </div>
+                            <div class="news_resume">Lorem Ipsum is simply dummy text of the printing and 
+                                typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever 
+                                since the 1500s, when an unknown printer took a galley of type and scrambled it to make a 
+                                ype specimen book. It has survived not only five centuries, but also the leap into electronic 
+                                typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of 
+                                Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software 
+                                like Aldus PageMaker including versions of Lorem Ipsum.
+                            </div>
+                            </a>
+                        </article>
+                        <article>
+                            <a href="">
+                            <div class="news_data">
+                                <div class="news_posted_at">16 JAN 22</div>
+                                <div class="news_comments">99</div>
+                            </div>
+                            <div class="news_thumbnail">
+                                <img src="assets/images/ansiedade-sintomas.jpg" style="height: 188.483px;" alt="">
+                            </div>
+                            <div class="news_title">
+                                Como identificar os sintomas da ansiedade
+                            </div>
+                            <div class="news_resume">Lorem Ipsum is simply dummy text of the printing and 
+                                typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever 
+                                since the 1500s, when an unknown printer took a galley of type and scrambled it to make a 
+                                ype specimen book. It has survived not only five centuries, but also the leap into electronic 
+                                typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of 
+                                Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software 
+                                like Aldus PageMaker including versions of Lorem Ipsum.
+                            </div>
+                            </a>
+                        </article>
+                    </div>
+                </div>
+            </section> 
+
+            <!--ÁREA DE ESPECIALIDADES-->
+
+            <aside>
+                <div class="widget">
+                    <div class="widget_title">
+                        <div class="widget_title_test"><strong>Departamentos</strong></div>
+                        <div class="widget_title_bar"></div>
+                    </div>
+                    <div class="widget_body">
+                        <div class="widget_box">
+                            <div class="box_container">
+                                <div class="especialidades">Psicologia</div>
+                            </div>
+                            <div class="box_container">
+                                <div class="especialidades">Psicoterapia</div>
+                            </div>
+                        </div>
+                        <div class="widget_box">
+                            <div class="box_container">
+                                <div class="especialidades">Psiquiatria</div>
+                            </div>
+                            <div class="box_container">
+                                <div class="especialidades">Neurologia</div>
+                            </div>
+                        </div>
+                        <div class="widget_box">
+                            <div class="box_container">
+                                <div class="especialidades">Psicanalista</div>
+                            </div>
+                            <div class="box_container">
+                                <div class="especialidades">Psicopedagogia</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--AŔEA DE CONTATOS-->
+
+                <div class="widget">
+                    <div class="widget_title">
+                        <div class="widget_title_test"> <strong>Agende uma consulta</strong> </div>
+                        <div class="widget_title_bar"></div>
+                    </div>
+                    <div class="widget_body">
+                        <div class="conteudo_contatos">
+                            <div class="info_contatos">
+                                <div class="contatos">Entre em contato diretamente conosco através do nosso
+                                    email, telefone. <br>
+                                    Para reclamações, por favor clique e preenchar o formulário abaixo.
+                                </div>
+                                <div class="contatos">
+                                        <img class="logo_png" src="../MedCenter/assets/images/telefone(2).png" alt="">
+                                        <div class="contatos_informacao"> Nosso Telefone <strong>1-800-643-05</strong> </div>
+                                    </div>
+                                </div>
+                                <div class="contatos">
+                                    <img class="logo_png" src="../MedCenter/assets/images/correspondencia.png" alt="">
+                                    <div class="contatos_informacao"> Nosso Email <strong><a href=""> contato@medicenter.com</a></strong> </div>
+                                </div>
+                                <div class="contatos">
+                                    <img class="logo_png" src="../MedCenter/assets/images/formulario-de-contato.png" alt="">
+                                    <div class="contatos_informacao"> Ou <strong><a href=""> preencha o formulário </a></strong> na nossa página de contato </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </section>
+
+    <!--ÁREA DO RODAPÉ-->
+    <footer>
+        <div class="container flexColumn">
+            <div class="footer_menu">
+                <div class="fm1">
+                    <div class="ajuste">
+                        <div class="banner_title">Planos de Saúde</div>
+                        <div class="banner_desc">
+                        <ul>
+                            <a href=""><li>ASSIM SAÚDE</li></a><br>
+                            <a href=""><li>MEMORIAL SAÚDE</li></a><br>
+                            <a href=""><li>UNIMED</li></a><br>
+                            <a href=""><li>SULAMERICA</li></a><br>
+                            <a href=""><li>BRADESCO SAÚDE</li></a><br>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="fm2">
+                    <div class="ajuste">
+                        <div class="banner_title">Registros Médicos</div>
+                        <div class="banner_desc">CONHEÇA NOSSOS ESPECIALISTAS AQUI
+                            <br>
+                            <ul>
+                                <li><a href="">Drª Amanda Lacerda</a></li><br>
+                                <li><a href="">Drª Karen Mendes</a></li><br>
+                                <li><a href="">Dr Sandro Ribeiro</a></li><br>
+                                <li><a href="">Dr Rafael Tourinho</a></li><br>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="fm3">
+                    <div class="ajuste">
+                        <div class="banner_title">Pagamentos Online</div>
+                        <div class="banner_desc">EMAIL: <br>
+                            <form method="post" action="" enctype="multipart/form-data">
+                                <input class="fazer_login" type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="texto@domínio.algumacoisa"/ >
+                                <br> PLANO:<br>  
+                                <input class="fazer_login" type="text" name="plano" required> <br>
+                                <button class="botao">Gerar boleto</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_area">
+                <div class="footer_area_item">
+                    <div class="widget">
+                        <div class="widget_title">
+                            <div class="widget_title_test"> <strong>Clínica MediCenter</strong> </div>
+                            <div class="widget_title_bar"></div>
+                        </div>
+                        <div class="widget_body_footer"> 
+                            <div class="widget_body_footer">
+                                Medicenter Clinic <br>
+                                33 Farlane Street <br>
+                                Keylor East <br>
+                                VIC 3303, Australia <br>
+                            </div>
+                            <div class="footer_number">
+                                    +123 (55) 655 655<br>
+                                    +123 (55) 755 755<br>
+                                    <br>
+                                    <a href=""><span>contato@medicenter.com<br></a>
+                            </div>
+                        </div>
+                        <div class="social_network">
+                            <a href=""><img src="assets/images/facebook.png"></a>
+                            <a href=""><img src="assets/images/instagram.png"></a>
+                            <a href=""><img src="assets/images/twitter.png"></a>
+                            <a href=""><img src="assets/images/o-email.png"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_area_item">
+                    <div class="widget">
+                        <div class="widget_title">
+                            <div class="widget_title_test"> <strong>Últimos posts </strong> </div>
+                            <div class="widget_title_bar"></div>
+                        </div>
+                        <div class="widget_body"> 
+                            <div class="last_news">
+                                &#65515; Atendimento de primeira qualidade no Medicenter...
+                            </div>
+                            <div class="read_more"><a href=""> Leia mais</a></div>
+                            <div class="last_news">
+                                &#65515; A importância de se discutir o setembro amarelo...
+                            </div>
+                            <div class="read_more"><a href=""> Leia mais</a></div>
+                            <div class="last_news">
+                                &#65515; Campanha de ajuda psicológica solidária...
+                            </div>
+                            <div class="read_more"><a href=""> Leia mais</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_area_item">
+                    <div class="widget">
+                        <div class="widget_title">
+                            <div class="widget_title_test"> <strong>Últimos tweets</strong> </div>
+                            <div class="widget_title_bar"></div>
+                        </div>
+                        <div class="widget_body"> 
+                            <div class="tweets">
+                                Essa promoção de 50% de desconto em todas as especialidades 
+                                abre margem para tratamento de muita... 
+                                    <a href="">Leia mais</a>
+                            </div>
+                            <div class="tweets">
+                                Essa promoção de 50% de desconto em todas as especialidades 
+                                abre margem para tratamento de muita... 
+                                <a href="">Leia mais</a>
+                            </div>
+                            <div class="tweets">
+                                Essa promoção de 50% de desconto em todas as especialidades 
+                                abre margem para tratamento de muita... 
+                                <a href="">Leia mais</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="footer_copy">
+                    Copyright - Todos os direitos reservados 
+                </div>
+        </div>
+
+
+    </footer>
+</body>
+</html>
